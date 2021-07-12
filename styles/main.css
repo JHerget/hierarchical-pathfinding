@@ -1,0 +1,6 @@
+label ~ div {
+	display: inline-block;
+	margin-right: 100px;
+	font-weight: bold;
+	font-size: 25px;
+}
