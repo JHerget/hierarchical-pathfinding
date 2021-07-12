@@ -72,11 +72,11 @@ let options_update = function(){
 	}
 
 	if(pathtree_checkbox.checked()){
-		for(let quadrant of qt_leaves){
-			if(quadrant.node.previous){
+		for(let location in qt_leaves){
+			if(qt_leaves[location].node.previous){
 				stroke(76, 194, 84);
 				strokeWeight(1);
-				line(quadrant.node.pos.x - camera.pos.x, quadrant.node.pos.y - camera.pos.y, quadrant.node.previous.pos.x - camera.pos.x, quadrant.node.previous.pos.y - camera.pos.y);
+				line(qt_leaves[location].node.pos.x - camera.pos.x, qt_leaves[location].node.pos.y - camera.pos.y, qt_leaves[location].node.previous.pos.x - camera.pos.x, qt_leaves[location].node.previous.pos.y - camera.pos.y);
 			}
 		}
 	}
